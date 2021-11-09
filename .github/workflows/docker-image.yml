@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag bitsmaestro/jenkins-jnlp-slave-ansible:$(date +%s)
     - name: Push the Docker image
-      run: docker image push --all-tag bitsmaestro/jenkins-jnlp-slave-ansible
+      run: docker image push bitsmaestro/jenkins-jnlp-slave-ansible
